@@ -1,0 +1,33 @@
+/*Tailwind css config*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #020617;
+  --primary: #0f172a;
+  --primary-foreground: #f8fafc;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --accent: #f1f5f9;
+  --muted: #f1f1f1;
+}
+
+.dark {
+  --background: #151515;
+  --foreground: #f8fafc;
+  --primary: #f8fafc;
+  --primary-foreground: #0f172a;
+  --secondary: #1e293b;
+  --secondary-foreground: #f8fafc;
+  --accent: #1e293b;
+  --muted: #94a3b8;
+}
+
+body {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
